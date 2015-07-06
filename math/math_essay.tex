@@ -1,0 +1,49 @@
+\documentclass[14pt, a4paper]{article}
+
+        \makeatletter
+
+    %                From here.sty
+    \ifx\@Hxfloat\@Hundef\else\expandafter\endinput\fi
+    \let\@Hxfloat\@xfloat
+    \def\@xfloat#1[{\@ifnextchar{H}{\@HHfloat{#1}[}{\@Hxfloat{#1}[}}
+    \def\@HHfloat#1[H]{%
+    \expandafter\let\csname end#1\endcsname\end@Hfloat
+    \vskip\intextsep\def\@captype{#1}\parindent\z@
+    \ignorespaces}
+    \def\end@Hfloat{\vskip \intextsep}
+
+  %  \renewcommand{\@oddhead}{\hfil —- \textrm{\thepage} —-\hfil}
+    \renewcommand{\@biblabel}[1]{#1.} %pp.293,336
+    \renewcommand{\@makecaption}[2]{%
+    \vspace{\abovecaptionskip}%
+    \sbox{\@tempboxa}{#1. #2} \ifdim \wd\@tempboxa >\hsize #1. #2\par
+    \else \global\@minipagefalse \hbox to \hsize {\hfil #1. #2\hfil}%
+    \fi \vspace{\belowcaptionskip}}
+
+    \makeatother
+%\usepackage{fontspec}
+\usepackage[utf8]{inputenc} 
+\usepackage[english,russian]{babel} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage{graphicx} 
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{pdfpages}
+\usepackage[left=3cm,right=1.5cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\renewcommand{\tiny}{\fontsize{7}{8.4pt}\selectfont}
+\renewcommand{\scriptsize}{\fontsize{9}{11pt}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{11}{12pt}\selectfont}
+\renewcommand{\small}{\fontsize{12}{14pt}\selectfont}
+\renewcommand{\normalsize}{\fontsize{14}{14pt}\selectfont}
+\renewcommand{\large}{\fontsize{17}{18pt}\selectfont}
+\renewcommand{\Large}{\fontsize{20}{25pt}\selectfont}
+\renewcommand{\LARGE}{\fontsize{25}{30pt}\selectfont}
+\renewcommand{\baselinestretch}{1.5}
+\parindent=1.25cm
+
+\begin{document}
+123456
+\end{document}
