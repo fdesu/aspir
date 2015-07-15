@@ -1,0 +1,66 @@
+\documentclass[14pt, a4paper]{article}
+
+        \makeatletter
+
+    %                From here.sty
+    \ifx\@Hxfloat\@Hundef\else\expandafter\endinput\fi
+    \let\@Hxfloat\@xfloat
+    \def\@xfloat#1[{\@ifnextchar{H}{\@HHfloat{#1}[}{\@Hxfloat{#1}[}}
+    \def\@HHfloat#1[H]{%
+    \expandafter\let\csname end#1\endcsname\end@Hfloat
+    \vskip\intextsep\def\@captype{#1}\parindent\z@
+    \ignorespaces}
+    \def\end@Hfloat{\vskip \intextsep}
+
+  %  \renewcommand{\@oddhead}{\hfil —- \textrm{\thepage} —-\hfil}
+    \renewcommand{\@biblabel}[1]{#1.} %pp.293,336
+    \renewcommand{\@makecaption}[2]{%
+    \vspace{\abovecaptionskip}%
+    \sbox{\@tempboxa}{#1. #2} \ifdim \wd\@tempboxa >\hsize #1. #2\par
+    \else \global\@minipagefalse \hbox to \hsize {\hfil #1. #2\hfil}%
+    \fi \vspace{\belowcaptionskip}}
+
+    \makeatother
+%\usepackage{fontspec}
+\usepackage[cp1251]{inputenc} 
+\usepackage[english,russian]{babel} 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage{graphicx} 
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\usepackage{pdfpages}
+\usepackage[left=3cm,right=1.5cm,
+    top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\renewcommand{\tiny}{\fontsize{7}{8.4pt}\selectfont}
+\renewcommand{\scriptsize}{\fontsize{9}{11pt}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{11}{12pt}\selectfont}
+\renewcommand{\small}{\fontsize{12}{12pt}\selectfont}
+\renewcommand{\normalsize}{\fontsize{12}{12pt}\selectfont}
+\renewcommand{\large}{\fontsize{17}{18pt}\selectfont}
+\renewcommand{\Large}{\fontsize{20}{25pt}\selectfont}
+\renewcommand{\baselinestretch}{1.5}
+\parindent=1.25cm
+
+\begin{document}
+\begin{center}
+{ \large \textbf{Мотивационное письмо}}
+\end{center}
+~\par
+Добрый день,\\
+
+В этом году я окончил факультет Прикладной математики -- Процессов управления Санкт-Петербургского государственного университета и получил диплом специалиста со средним баллом $4.3$ по направлению ``прикладная математика и информатика''. \\
+
+Высокий уровень образовательных программ, а также профессионализм преподавательского состава дали мне возможность научиться применять сложный математический аппарат в широком спектре современных задач. Не говоря уже о том, что количество тех самых задач растет с каждым днем, можно сказать, по экспоненте, а это требует достаточное количество квалифицированных кадров. Факультет Прикладной математики научил меня создавать математические модели различных процессов, а затем, опираясь на такие математические модели, решать поставленную проблему.  Это уже не просто применение какого-то абстрактного математического аппарата на деле, это способ мышления, который дает возможность осмысленно и действенно приносить пользу обществу.\\
+
+Я работаю инженером-программистом в крупном финансовом проекте, где используется широкий ряд интересных технологий из мира прикладной математики, таких как: криптография, параллельные и распределенные вычисления и многие другие. Имея профессиональный опыт в сфере ИТ я все чаще склоняюсь к мысли, что в последние годы роль математики, а в особенности ее прикладной части существенно возрастает. Это обусловлено самой логикой развития современной науки, где формируется новая научная парадигма и новая методология исследований, основанная на существенно более широком использовании математических концепций и методов, не говоря уже о том, что математика и информатика всюду проникают в нашу повседневную жизнь. Окончив специалитет, учитывая, что я обладаю довольно объемным и широким багажом знаний, я имею огромное желание углубиться не только в конкретные проблемы математики уже в аспирантуре по направлению ``Прикладная математика и процессы управления''.\\
+
+Я готов к учебе в аспирантуре по данному направлению и в будущем планирую профессионально заниматься в области прикладной математики, информационных технологий и вычислительной техники и тем самым приносить пользу не только себе, ведь мне это, определенно, очень интересно, но и обществу, и области науки в целом.\\
+
+Спасибо за рассмотрение моей просьбы. С нетерпением жду Вашего положительного ответа.
+
+
+
+
+\end{document}
